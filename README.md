@@ -1,6 +1,6 @@
 # gif-bpm-counter
 
-detect bpm of gif from any url
+detect bpm (range `70 ~ 180`) of gif from any url
 
 ## How to use
 

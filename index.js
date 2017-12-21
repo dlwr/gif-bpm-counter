@@ -21,6 +21,7 @@ async function detectBpm(buffer) {
 }
 
 function convertDurationToBpm(duration) {
+  console.log(duration)
   return roundBpm(60 * 100 / duration)
 }
 
@@ -47,4 +48,4 @@ const server = http.createServer(async (request, response) => {
   response.writeHead(200, {'Content-Type': 'text/plain'})
   response.write(`${result}`)
   response.end()
-}).listen(4000)
+}).listen(process.env.PORT || 4000)
